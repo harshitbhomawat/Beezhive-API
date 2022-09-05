@@ -1,0 +1,11 @@
+This API has 1 endpoint "http://localhost:5000/api"
+
+1) POST request:- 
+	For adding a message post request to "http://localhost:5000/api" needs to be send. In this request there
+	should be a 'text' field in body. i.e. the name of field is 'text' and we can add the message we want to 
+	post as the value to this field.
+	Example:-  text: "This Site is Worst".
+
+2) GET request:-
+	It simply returns all messages, so that we can check whether the messages have been sanitized and
+	monitized.

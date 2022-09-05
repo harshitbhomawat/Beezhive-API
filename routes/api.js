@@ -3,7 +3,7 @@ const router = express.Router();
 const { initializeApp, applicationDefault, cert } = require('firebase-admin/app');
 const { getFirestore, Timestamp, FieldValue } = require('firebase-admin/firestore');
 var lowerCase = require("lower-case");
-var capitalize = require("capitalize")
+var capitalize = require("capitalize");
 
 
 
@@ -61,7 +61,7 @@ router.get("/check",(req,res)=>{
     var text = lowerCase.lowerCase("tHis is NOT woRKing!!");
     text = capitalize(text);
     res.json(text);
-})
+});
 
 router.get("/",(req,res)=>{
     (async()=>{
